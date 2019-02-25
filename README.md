@@ -1,9 +1,11 @@
 # Javascript-MIDI-File
 Javascript MIDI file parsing and creating.
 
-A Javascript version of VBA-MIDI.
+A Javascript version of vba-midi.
 
-To create a new midiFile object use the factory function createMidiFile( { bytes, headerChunk, eventTracks } ). 
+To create a new midiFile object use the factory function 
+  
+    createMidiFile( { bytes, headerChunk, eventTracks } ) 
 
 To create a parsed midiFile object from an array of midi file bytes include only the bytes parameter.
 
