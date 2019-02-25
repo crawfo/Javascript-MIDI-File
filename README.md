@@ -1,4 +1,4 @@
-# Javascript-MIDI-File
+# javascript-midi
 Javascript MIDI file parsing and creating.
 
 A Javascript version of vba-midi.
