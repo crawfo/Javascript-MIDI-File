@@ -10,7 +10,7 @@ const testFile = [ 77, 84, 104, 100, 0, 0, 0, 6, 0, 1, 0,
 const testTrack = testFile.slice(14, 43);
 const testTracks = testFile.slice(14, 43).concat(testFile.slice(14, 43));
 
-//multi-class constants
+//constants
 const MAX_7_BIT_VALUE = 127;
 const FILE_HEADER_LENGTH = 14; 
 const TRACK_HEADER_LENGTH = 8; 
@@ -202,7 +202,7 @@ const SmpteFormatEnum = {
     FPS_30_DROP_FRAME: -30
 };
 
-//functions
+//common midi functions
 function encodeVLV( value ) {
     //encodes a number to an array of variable length value bytes
     let valueBitShiftedRight;
@@ -288,7 +288,6 @@ function getVLVBytes( bytes, startPosition ) {
 
 function hasMsbSet( byteToCheck ) {
     //returns true when msb is set, otherwise false
-    //const MAX_7_BIT_VALUE = 0x7f;
     return byteToCheck > MAX_7_BIT_VALUE;
 }
 
@@ -317,7 +316,6 @@ function serialize( trackEvent ) {
     deltaBytes.forEach( function( deltaByte ) {
         eventBytes.push( deltaByte );
     } );
-    //deltaBytes.forEach( deltaByte => eventBytes.push( deltaByte ) );
    
     //add event bytes
     const isMetaEvt = ( trackEvent.status === StatusEnum.META_EVENT );
