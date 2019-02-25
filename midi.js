@@ -1,4 +1,3 @@
-//test file
 const testFile = [ 77, 84, 104, 100, 0, 0, 0, 6, 0, 1, 0,
                    2, 1, 224, 77, 84, 114, 107, 0, 0, 0, 21, 
                    0, 146, 60, 68, 0, 64, 65, 0, 67, 62, 
@@ -10,7 +9,7 @@ const testFile = [ 77, 84, 104, 100, 0, 0, 0, 6, 0, 1, 0,
 const testTrack = testFile.slice(14, 43);
 const testTracks = testFile.slice(14, 43).concat(testFile.slice(14, 43));
 
-//constants
+//midi constants
 const MAX_7_BIT_VALUE = 127;
 const FILE_HEADER_LENGTH = 14; 
 const TRACK_HEADER_LENGTH = 8; 
