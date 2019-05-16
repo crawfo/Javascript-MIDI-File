@@ -1,7 +1,7 @@
-# javascript-midi
+# javascript-midi-file
 Javascript MIDI file parsing and creating.
 
-A Javascript version of vba-midi.
+A Javascript version of vba-midi-file.
 
 To create a new midiFile object use the factory function 
   
